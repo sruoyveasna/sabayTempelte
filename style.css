@@ -1,0 +1,696 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.container1 {
+  width: 100%;
+  overflow: hidden;
+  background-color: aqua;
+}
+.container1 .header {
+  padding-top: 15px;
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  padding-bottom: 15px;
+}
+.container1 .header .logo {
+  width: 12%;
+  height: 120px;
+  margin-left: 15%;
+  margin-right: 8%;
+  float: left;
+}
+.container1 .header .logo img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+.header .banner {
+  width: 50%;
+  height: 100px;
+  float: right;
+  margin-right: 15%;
+  margin-top: 15px;
+  position: relative;
+}
+.banner image {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+  object-fit: cover;
+}
+.nav {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(255, 0, 85);
+  text-decoration: none;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav .icon {
+  width: 5%;
+  height: 100%;
+  background-color: rgb(233, 2, 2);
+  margin-left: 15%;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+.menu {
+  width: 65%;
+  height: 100%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.nav .menu ul li {
+  float: left;
+  margin-right: 40px;
+  list-style-type: none;
+}
+.nav .menu ul li:last-child {
+  margin: 0px;
+}
+.menu ul li a {
+  font-family: "Courier New", Courier, monospace;
+  font-family: "Koulen", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.menu ul li a:hover {
+  opacity: 1;
+}
+.content {
+  width: 70%;
+  height: 450px;
+  background-color: aqua;
+  margin-left: 15%;
+  margin-top: 15px;
+  background-color: #f0f0f0;
+  /* Add shadow properties */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.315);
+}
+.content .box1 {
+  width: 40%;
+  height: 225px;
+  background-color: black;
+  float: left;
+  background-color: rgba(0, 0, 0, 0.349);
+  position: relative;
+}
+.content .box1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content .box1 .title p {
+  display: none;
+}
+.content .box2 .title p {
+  display: none;
+}
+.content .box2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content .box3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content .box2 {
+  width: 33%;
+  height: 225px;
+  background-color: rgb(158, 40, 40);
+  float: left;
+  margin-right: 1%;
+  position: relative;
+}
+.content .upcon .box3 {
+  width: 26%;
+  height: 220px;
+  background-color: rgb(141, 68, 68);
+  float: left;
+  margin-bottom: 5px;
+}
+.content .lowcon .box3 {
+  margin-top: 5px;
+  width: 26%;
+  height: 220px;
+  background-color: rgb(141, 68, 68);
+  float: left;
+}
+.content .box1 .title {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  font-size: 12px;
+  font-family: "koulen";
+  transform: translateY(130%);
+  position: absolute;
+  color: white;
+  overflow: hidden;
+  padding-left: 10px;
+  transition: 0.5s;
+}
+.content .box1:hover .title {
+  transform: translateY(80%);
+}
+.content .box1 .title:hover p {
+  display: block;
+}
+.content .box1 .title:hover h3 {
+  color: red;
+  text-shadow: 1px 1px white;
+}
+.content .box1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.content .box1:hover:before {
+  opacity: 1;
+}
+.content .box2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.content .box2:hover:before {
+  opacity: 1;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s;
+}
+.content .box2 .title {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  font-size: 12px;
+  font-family: "koulen";
+  transform: translateY(130%);
+  position: absolute;
+  color: white;
+  overflow: hidden;
+  padding-left: 10px;
+  transition: 0.5s;
+}
+.content .box2:hover .title {
+  transform: translateY(80%);
+}
+.content .box2 .title:hover p {
+  display: block;
+}
+.content .box2 .title:hover h3 {
+  color: red;
+  text-shadow: 1px 1px white;
+}
+.box1 .subt {
+  width: 20%;
+  height: 15%;
+  background-color: rgb(1, 221, 148);
+  color: white;
+  font-size: 12px;
+  font-family: "koulen";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+  position: absolute;
+}
+.box2 .subt {
+  width: 20%;
+  height: 15%;
+  background-color: rgb(23, 66, 206);
+  color: white;
+  font-size: 12px;
+  font-family: "koulen";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+  position: absolute;
+}
+.subt p {
+  margin-right: 10px;
+}
+.label {
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 100px;
+  height: 40px;
+  background-color: crimson;
+  color: white;
+  font-size: 12px;
+  font-family: "koulen";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+hr {
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  height: 5px;
+  background-color: crimson;
+  border: none;
+}
+.container .video {
+  margin-right: 15%;
+  margin-left: 15%;
+  padding: 20px;
+  width: 70%;
+  height: 650px;
+  background-color: #f0f0f0;
+  /* Add shadow properties */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.315);
+}
+.container .video .upvideo {
+  width: 100%;
+  height: 44%;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+}
+.container .video .upvideo .v {
+  width: 33%;
+  height: 75%;
+  background-color: rgb(0, 0, 0);
+  transition: transform 0s ease;
+}
+.container .video .lowvideo {
+  margin-top: 15px;
+  width: 100%;
+  height: 55%;
+  padding-bottom: 15px;
+}
+
+.video .upvideo .v img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.v:hover img {
+  transform: scale(0.97); /* Set the scale factor as per your preference */
+}
+.video .upvideo p {
+  font-size: 15px;
+  font-family: "Battambang";
+  font-weight: 700;
+  line-height: 24px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+h4 {
+  position: absolute;
+  margin-left: 10px;
+  color: white;
+  font-family: "koulen";
+  transform: translateY(200px);
+}
+.lowvideo .b1 {
+  width: 70%;
+  height: 100%;
+  float: left;
+}
+.lowvideo .b1 .upb1 {
+  width: 100%;
+  height: 49.5%;
+
+  display: flex;
+  justify-content: space-between;
+}
+.lowvideo .b1 .lowb1 {
+  width: 100%;
+  height: 49.5%;
+
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+}
+.b2 {
+  float: right;
+  width: 30%;
+  height: 100%;
+}
+.lowvideo .b1 .upb1 .sv {
+  width: 24%;
+  height: 100%;
+}
+.lowvideo .b1 .lowb1 .sv {
+  margin-top: 5px;
+  width: 24%;
+  height: 100%;
+}
+.lowvideo .b1 .upb1 .sv .image {
+  width: 100%;
+  height: 70%;
+  background-color: black;
+}
+.lowvideo .b1 .upb1 .sv .image img {
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lowvideo .b1 .upb1 .sv .ti {
+  width: 100%;
+  height: 30%;
+  background-color: #f0f0f0;
+}
+.lowvideo .b1 .upb1 .sv .ti p {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 13px;
+  font-size: "Battambang";
+  font-weight: 600;
+}
+.lowvideo .b1 .lowb1 .sv .image {
+  background-color: black;
+  width: 100%;
+  height: 70%;
+}
+.lowvideo .b1 .lowb1 .sv .image img {
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lowvideo .b1 .lowb1 .sv .ti {
+  width: 100%;
+  height: 30%;
+  background-color: #f0f0f0;
+}
+.lowvideo .b1 .lowb1 .sv .ti p {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 13px;
+  font-size: "Battambang";
+  font-weight: 600;
+}
+.b2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: 5px;
+}
+.lowvideo .b1 .lowb1 .sv:hover img {
+  transform: scale(0.97); /* Set the scale factor as per your preference */
+}
+.lowvideo .b1 .upb1 .sv:hover img {
+  transform: scale(0.97); /* Set the scale factor as per your preference */
+}
+.komsan {
+  width: 70%;
+  height: 410px;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  /* Add shadow properties */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.315);
+  overflow: hidden;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.komsan .box1 {
+  width: 30%;
+  height: 100%;
+  background-color: bisque;
+}
+.komsan .box1 .image {
+  width: 100%;
+  height: 65%;
+  background-color: black;
+}
+.komsan .box1 .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.box1 .image:hover img {
+  transform: scale(0.97);
+}
+.komsan .box1 .des {
+  width: 100%;
+  height: 35%;
+  padding: 15px;
+  background-color: rgb(253, 11, 112);
+}
+.komsan .box1 .des p {
+  font-size: 22px;
+  font-family: "Battambang", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 35px;
+  color: #f0f0f0;
+}
+.komsan .box2 {
+  width: 69%;
+  height: 100%;
+}
+.box2 .upbox {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.box2 .upbox .sv {
+  width: 24%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+}
+.box2 .lowbox {
+  width: 100%;
+  height: 50%;
+  background-color: rgb(239, 239, 248);
+  display: flex;
+  justify-content: space-between;
+}
+.box2 .lowbox .sv {
+  width: 24%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+}
+.box2 .upbox .sv .im {
+  width: 100%;
+  height: 60%;
+}
+.box2 .upbox .sv .im img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box2 .upbox .sv .let {
+  width: 100%;
+  height: 40%;
+  background-color: white;
+  padding: 5px;
+}
+.box2 .upbox .sv .let p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Battambang, Arial, Helvetica, sans-serif;
+  line-height: 20px;
+}
+.box2 .lowbox .sv .im {
+  width: 100%;
+  height: 60%;
+}
+.box2 .lowbox .sv .im img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box2 .lowbox .sv .let {
+  width: 100%;
+  height: 40%;
+  background-color: white;
+  padding: 5px;
+  overflow: hidden;
+}
+.box2 .lowbox .sv .let p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Battambang, Arial, Helvetica, sans-serif;
+  line-height: 20px;
+}
+.box2 .lowbox .sv .im:hover img {
+  transition: 0.3s;
+  transform: scale(0.97);
+}
+.box2 .upbox .sv .im:hover img {
+  transition: 0.3s;
+  transform: scale(0.97);
+}
+.footer {
+  margin-top: 100px;
+  width: 100%;
+  height: 320px;
+  background-color: black;
+  overflow: hidden;
+}
+.footer .main {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+.footer .main .box {
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+.footer .main .box:last-child {
+  float: right;
+}
+.footer .main .box2 {
+  float: left;
+  width: 40%;
+  height: 100%;
+}
+.main .box:first-child .logo {
+  margin-top: 30px;
+  width: 49%;
+  height: 21%;
+  margin-bottom: 20px;
+  background-image: url("/footer-logo.png"); /* Replace with the path to your image */
+  background-size: cover; /* Maintain aspect ratio and cover the container */
+}
+.main .box:first-child .des {
+  width: 100%;
+  height: 55%;
+  background-color: black;
+}
+.main .box:first-child .des p {
+  font-size: 14px;
+  font-family: Battambang, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  color: white;
+}
+.box {
+  width: 300px; /* Set the width of your box */
+  height: 200px; /* Set the height of your box */
+}
+.box2 .logo h1 {
+  margin-top: 50px;
+  color: white;
+  font-family: "Koulen";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.box2 .logo p {
+  margin-top: 50px;
+  color: white;
+  font-family: "Koulen";
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 22px;
+}
+.box2 .des {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.des .logobox {
+  width: 9%;
+  margin-right: 1%;
+  overflow: hidden;
+}
+.des .logobox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+:last-child.box .logo h1 {
+  margin-top: 50px;
+  color: white;
+  font-family: "Koulen";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 22px;
+}
+:last-child.box {
+  padding-left: 10px;
+}
+:last-child.box .logo p {
+  margin-top: 50px;
+  color: white;
+  font-family: "Koulen";
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 22px;
+}
+:last-child.box .des {
+  margin-top: 40px;
+  display: flex;
+}
+:last-child.box .des .icon {
+  width: 50px;
+  height: 50px;
+}
+:last-child.box .des .icon i {
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+  color: #f0f0f0;
+}
+:last-child.box h3 {
+  color: #f0f0f0;
+  font-family: "Koulen";
+  font-size: 20px;
+}
